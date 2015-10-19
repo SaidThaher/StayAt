@@ -1,0 +1,46 @@
+<ion-view view-title="Hotel Page">
+	<ion-header-bar class="bar bar-header">
+		<a class="button icon-left ion-ios-arrow-back button-clear" href="#/home"></a>
+     	 <h1 class="title">Hotel Name</h1>
+    </ion-header-bar>
+
+  <ion-content overflow-scroll=”true”>
+  	<div class="welcome">
+  		<h2>Welcome to hotel</h2>
+  	</div>
+  		<!-- Images slide show  -->
+	  <ion-slide-box class="slidebox" show-pager="true" does-continue="true" auto-play="true" on-slide-changed="slideHasChanged($index)">
+	    <ion-slide>
+	        <img src="img/pic1.jpg"/>
+	    </ion-slide>
+	    <ion-slide>
+	        <img src="img/pic2.jpg"/>
+	    </ion-slide>
+	    <ion-slide>
+	        <img src="img/pic3.jpg"/>
+	    </ion-slide>
+	    <ion-slide>
+	        <img src="img/pic4.jpg"/>
+	    </ion-slide>
+	</ion-slide-box>
+
+	<div class="row">
+		<div class="col col-50">
+		  	<a class="button button-larg" href="#/facilities">Our Facilities</a>
+		</div> </br>
+		<div class="col col-50">
+		  	<a class="button button-larg" href="#/offers">Our Offers</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col col-50">
+		  	<a class="button button-larg" href="#/events">Events</a>
+		</div>
+		<div class="col col-50">
+		  	<a class="button button-larg" href="#/restaurant">Restaurant</a>
+		</div>
+  
+	</div>
+    
+  </ion-content>
+</ion-view>

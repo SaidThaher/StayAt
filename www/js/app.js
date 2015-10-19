@@ -44,10 +44,35 @@ stayAt.config(function($stateProvider, $urlRouterProvider) {
 
     .state('about', {
       url: '/about',
-      templateUrl: '../templates/about.html'
+      templateUrl: 'templates/about.html'
         
-      
+    })
+
+    .state('hotelPage', {
+      url: '/hotelPage',
+      templateUrl: 'templates/hotelPage.html'
+    })
+
+    .state('facilities', {
+      url: '/facilities',
+      templateUrl: 'templates/facilities.html'
+    })
+
+    .state('events', {
+      url: '/events',
+      templateUrl: 'templates/events.html'
+    })
+
+    .state('offers', {
+      url: '/offers',
+      templateUrl: 'templates/offers.html'
+    })
+
+    .state('restaurant', {
+      url: '/restaurant',
+      templateUrl: 'templates/restaurant.html'
     });
+
     $urlRouterProvider.otherwise('/home');
 });
 

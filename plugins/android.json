@@ -54,6 +54,9 @@
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.ionicframework.stayat895561"
         },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.ionicframework.stayat895561"
+        },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.ionicframework.stayat895561"
         },
@@ -64,9 +67,6 @@
             "PACKAGE_NAME": "com.ionicframework.stayat895561"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.stayat895561"
-        },
-        "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.ionicframework.stayat895561"
         }
     },

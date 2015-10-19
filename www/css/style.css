@@ -1,3 +1,84 @@
+/* Pages befor the code sumit*/
+.page {
+	background: #3289c7;
+	padding: 5px;
+	
+}
+.page p {
+	text-align: center;
+}
+.sub-title{
+	text-align: center;
+	padding-top: 20px;	
+	text-decoration: underline;
+	text-shadow: 1px 1px #d94ed9;
+}
+
+.list-inset{
+	margin-top: 150px;
+}
+
+.item-input  {
+	background: #e3dee3;
+	border: 1px solid black;
+	
+}
+
+.button-block{
+	background: #2baf2b;
+	border-radius: 10px;
+
+}
+
+/* Hotel page   */
+.bar-header{
+background: #780878;
+}
+
+.slidebox{
+	mmax-width: 400px;
+	max-height: 250px;
+	margin: 10px auto;
+	border-top: 4px solid #780878;
+	border-bottom: 4px solid #780878;
+}
+
+.slidebox img {
+	width: 100%;
+	height: 250px;
+}
+
+.welcome h2 {
+	text-align: center;
+	margin: 10px auto;
+	text-shadow: 1px 1px #d94ed9;
+}
+.row{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.col {
+	margin-left: 7px;
+}
+.button-larg{
+	background: #2baf2b;
+	border: 2px solid #0a8f08;
+	border-radius: 10px;
+	font-weight: bold;
+	width: 130px;
+}
+
+/* Facilities page */
+.item{
+	width: 350px;
+	background: #98b5eb;
+}
+.item img{
+	border: 1px solid black;
+}
+
+
+/*footer*/
 .bar-footer {
 	background: #ddd;
 }

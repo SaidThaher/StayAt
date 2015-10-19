@@ -54,11 +54,11 @@ module.exports.metadata =
 {
     "cordova-plugin-console": "1.0.1",
     "cordova-plugin-device": "1.0.1",
+    "cordova-plugin-geolocation": "1.0.2-dev",
     "cordova-plugin-splashscreen": "2.1.0",
     "cordova-plugin-statusbar": "1.0.1",
     "cordova-plugin-whitelist": "1.0.0",
-    "ionic-plugin-keyboard": "1.0.7",
-    "cordova-plugin-geolocation": "1.0.2-dev"
+    "ionic-plugin-keyboard": "1.0.7"
 }
 // BOTTOM OF METADATA
 });
