@@ -1,9 +1,20 @@
+(function (angular) {
+  'use strict';
+
 // Ionic Starter App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-var stayAt = angular.module('StayAt', ['ionic','firebase']);
+var stayAt = angular.module('StayAt', [
+      'ionic',
+      'firebase',
+      'myApp.maps',
+      'myApp.hotelCode',
+      'ngCordova',
+      'ngIOS9UIWebViewPatch'
+
+  ]);
 
 stayAt.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -30,14 +41,15 @@ stayAt.config(function($stateProvider, $urlRouterProvider) {
 
     .state('hotelCode', {
       url: '/hotelCode',
-      templateUrl: 'templates/hotelCode.html'
-        
+      templateUrl: 'templates/hotelCode.html',
+      controller: 'HotelCodeController'
       
     })
 
     .state('aroundYou', {
       url: '/aroundYou',
-      templateUrl: 'templates/aroundYou.html'
+      templateUrl: 'templates/aroundYou.html',
+      controller: 'MapController'
         
       
     })
@@ -76,3 +88,5 @@ stayAt.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
 });
 
+
+})(angular);

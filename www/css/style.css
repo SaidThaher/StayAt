@@ -36,7 +36,7 @@ background: #780878;
 }
 
 .slidebox{
-	mmax-width: 400px;
+	
 	max-height: 250px;
 	margin: 10px auto;
 	border-top: 4px solid #780878;
@@ -77,6 +77,16 @@ background: #780878;
 	border: 1px solid black;
 }
 
+/*  Around you Page */
+
+.scroll {
+    height: 100%;
+}
+ 
+#map {
+    width: 100%;
+    height: 100%;
+}
 
 /*footer*/
 .bar-footer {
