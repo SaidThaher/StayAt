@@ -14,14 +14,16 @@
 	text-shadow: 1px 1px #d94ed9;
 }
 
-.list-inset{
+.code{
 	margin-top: 150px;
+
 }
 
-.item-input  {
-	background: #e3dee3;
-	border: 1px solid black;
+
+.item-input {
 	
+	border: 1px solid black;
+	background: white;
 }
 
 .button-block{
@@ -38,7 +40,7 @@ background: #780878;
 .slidebox{
 	
 	max-height: 250px;
-	margin: 10px auto;
+	margin: 10px auto 0px auto;
 	border-top: 4px solid #780878;
 	border-bottom: 4px solid #780878;
 }
@@ -52,6 +54,7 @@ background: #780878;
 	text-align: center;
 	margin: 10px auto;
 	text-shadow: 1px 1px #d94ed9;
+	
 }
 .row{
 	margin-top: 20px;
@@ -70,13 +73,16 @@ background: #780878;
 
 /* Facilities page */
 .item{
-	width: 350px;
+	width: 100%;
 	background: #98b5eb;
+	margin-top: 5px;
 }
 .item img{
 	border: 1px solid black;
 }
-
+.border {
+	border-bottom: 4px solid #780878
+}
 /*  Around you Page */
 
 .scroll {

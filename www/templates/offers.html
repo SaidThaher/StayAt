@@ -1,10 +1,23 @@
+
 <ion-view view-title="Our Offers">
-<ion-header-bar class="bar bar-header">
-<a class="button icon-left ion-ios-arrow-back button-clear" href="#/hotelPage"></a>
-      <h1 class="title">Hotel Name</h1>
-    </ion-header-bar>
-  <ion-content>
-  <h3>Our Offers</h3>
-    
-  </ion-content>
+	<ion-header-bar class="bar bar-header">
+		<a class="button icon-left ion-ios-arrow-back button-clear" href="#/hotelPage"></a>
+		  <h1 class="title">{{hotelname}}</h1>
+	</ion-header-bar>
+
+	<ion-content overflow-scroll=”true”>
+		  	<div class="welcome">
+		  		<h2>Our Offers</h2>
+		  	</div>
+		  	<div class="border"></div>
+
+		<ion-list>
+			<ion-item class="item-thumbnail-left" ng-repeat="offer in offers">
+			      <img ng-repeat="image in offer.images" ng-src="{{image}}">
+			      <h2>{{offer.title}}</h2>
+			      <pre>{{offer.post}}</pre>
+		    </ion-item>
+		</ion-list>
+	
+	</ion-content>
 </ion-view>

@@ -2,7 +2,7 @@
 'use strict';
 	var stayAt = angular.module('myApp.hotelCode',[]);
 
-	stayAt.controller('HotelCodeController', ['$scope','$firebaseArray','$location','$ionicPopup', function($scope,$firebaseArray,$location,$ionicPopup) {
+	stayAt.controller('HotelCodeController', ['$scope','$firebaseArray','$location','$ionicPopup','$localstorage', function($scope,$firebaseArray,$location,$ionicPopup,$localstorage) {
 		
 		//Check the hotel Code 
 		$scope.Submit = function(code){
@@ -18,18 +18,19 @@
 						    console.log("Authenticated successfully with payload:", authData);
 						
 						//retriev data from Firebase and check the code validation
-						var bb = ref.child('users').orderByChild('HotelCode');
-						bb.on('value',function(snap){
-
+						 ref.child('users').orderByChild('HotelCode').on('value',function(snap){
 							var keep = false;
 
 							snap.forEach(function(data){
 									
 									//If valid code, redirect to the Hotel page
 									if(hotelcode === data.val().HotelCode){
-										console.log(data.val().HotelCode);
-										console.log(data.key());
+										
 										keep=true;
+
+										$localstorage.set('userId', data.key());
+										$localstorage.set('hotelName', data.val().HotelName);
+										
 										$location.path('/hotelPage');
 										$scope.$apply();
 										$scope.code.val = null;
