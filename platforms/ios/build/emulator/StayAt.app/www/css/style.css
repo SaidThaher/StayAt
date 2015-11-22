@@ -14,7 +14,7 @@
 	text-shadow: 1px 1px #d94ed9;
 }
 
-.code{
+.code-input{
 	margin-top: 150px;
 
 }
@@ -71,7 +71,7 @@ background: #780878;
 	width: 130px;
 }
 
-/* Facilities page */
+/* Categories */
 .item{
 	width: 100%;
 	background: #98b5eb;

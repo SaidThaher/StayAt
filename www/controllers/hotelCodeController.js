@@ -13,11 +13,15 @@
 			var ref = new Firebase("https://hotelboard.firebaseio.com/");
 				ref.authAnonymously(function(error, authData) {
 					  if (error) {
-					    console.log("Login Failed!", error);
+					  			$ionicPopup.alert({
+								   	title: 'ERROR',
+									template: 'Login Failed. No Connection'
+								});
+					    	console.log("Login Failed!", error);
 						  } else {
-						    console.log("Authenticated successfully with payload:", authData);
+						    console.log("Authenticated successfully");
 						
-						//retriev data from Firebase and check the code validation
+						//retrieve data from Firebase and check the code validation
 						 ref.child('users').orderByChild('HotelCode').on('value',function(snap){
 							var keep = false;
 

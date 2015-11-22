@@ -16,7 +16,9 @@
     -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtIqDBzcuT2BeShdA5V8ncLwI_boFKbv0&sensor=true&libraries=places"></script>
     <!-- ionic/angularjs js -->
+    
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/angular-ios9-uiwebview-patch/angular-ios9-uiwebview-patch.js"></script>
     
     
 
@@ -31,6 +33,12 @@
 
     <!-- App Controllers-->
     <script src="controllers/mapController.js"></script>
+    <script src="controllers/hotelCodeController.js"></script>
+    <script src="controllers/hotelPageController.js"></script>
+    <script src="controllers/facilitiesController.js"></script>
+    <script src="controllers/offersController.js"></script>
+    <script src="controllers/eventsController.js"></script>
+    <script src="controllers/restaurantController.js"></script>
   </head>
   <body ng-app="StayAt" class="platform-android platform-cordova platform-webview">
 
@@ -43,9 +51,9 @@
       
       </ion-view>
 
-      <div class="bar bar-footer">
+      <ion-footer-bar class="bar bar-footer">
         <div class="title">©StayAt 2015</div>
-      </div>
+      </ion-footer-bar>
 
   </body>
 </html>

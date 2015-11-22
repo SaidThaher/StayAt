@@ -10,7 +10,14 @@ var stayAt = angular.module('StayAt', [
       'ionic',
       'firebase',
       'myApp.maps',
-      'ngCordova'
+      'myApp.hotelCode',
+      'myApp.hotelPage',
+      'myApp.facilities',
+      'myApp.offers',
+      'myApp.events',
+      'myApp.restaurant',
+      'ngCordova',
+      'ngIOS9UIWebViewPatch'
 
   ]);
 
@@ -39,8 +46,8 @@ stayAt.config(function($stateProvider, $urlRouterProvider) {
 
     .state('hotelCode', {
       url: '/hotelCode',
-      templateUrl: 'templates/hotelCode.html'
-        
+      templateUrl: 'templates/hotelCode.html',
+      controller: 'HotelCodeController'
       
     })
 
@@ -60,31 +67,47 @@ stayAt.config(function($stateProvider, $urlRouterProvider) {
 
     .state('hotelPage', {
       url: '/hotelPage',
-      templateUrl: 'templates/hotelPage.html'
+      templateUrl: 'templates/hotelPage.html',
+      controller: 'HotelPageController'
     })
 
     .state('facilities', {
       url: '/facilities',
-      templateUrl: 'templates/facilities.html'
+      templateUrl: 'templates/facilities.html',
+      controller: 'FacilitiesController'
     })
 
     .state('events', {
       url: '/events',
-      templateUrl: 'templates/events.html'
+      templateUrl: 'templates/events.html',
+      controller: 'EventsController'
     })
 
     .state('offers', {
       url: '/offers',
-      templateUrl: 'templates/offers.html'
+      templateUrl: 'templates/offers.html',
+      controller: 'OffersController'
     })
 
     .state('restaurant', {
       url: '/restaurant',
-      templateUrl: 'templates/restaurant.html'
+      templateUrl: 'templates/restaurant.html',
+      controller: 'RestaurantController'
     });
 
     $urlRouterProvider.otherwise('/home');
 });
+
+stayAt.factory('$localstorage', ['$window', function($window) {
+  return {
+    set: function(key, value) {
+      $window.localStorage[key] = value;
+    },
+    get: function(key, defaultValue) {
+      return $window.localStorage[key] || defaultValue;
+    }
+  }
+}]);
 
 
 })(angular);

@@ -32,7 +32,7 @@
     };
  		google.maps.event.addDomListener(document.getElementById("map"), 'load', $scope.initialize());
 
-/*
+
 	 		var input = document.getElementById('mapsearch');
 	  var searchBox = new google.maps.places.SearchBox(input);
 	  //$scope.map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
@@ -89,7 +89,7 @@
 	    });
 	    $scope.map.fitBounds(bounds);
 
-	  });*/
+	  });
 
 }]);
 
