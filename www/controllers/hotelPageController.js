@@ -10,10 +10,7 @@
 
 		var url = "https://hotelboard.firebaseio.com/";
 		var ref = new Firebase(url + 'users/' + userId + '/pictures');
-			//ref.on('value', function(snap){
 				$scope.pictures = $firebaseArray(ref);
-				
-			//})
 			
 	}]);
 

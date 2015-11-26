@@ -105,7 +105,10 @@ stayAt.factory('$localstorage', ['$window', function($window) {
     },
     get: function(key, defaultValue) {
       return $window.localStorage[key] || defaultValue;
-    }
+    },
+    remove: function () {
+            $window.localStorage.clear();
+        }
   }
 }]);
 
